@@ -1,4 +1,4 @@
-# Online Quiz
+# Quiz Navigus
 >Developed by : Abhyudaya Bora
 ---
 <!-- ## screenshots
