@@ -1,42 +1,42 @@
 # Quiz Navigus
 >Developed by : Abhyudaya Bora
 ---
-<!-- ## screenshots
-### Homepage
-![homepage snap](https://github.com/sumitkumar1503/onlinequiz/blob/master/static/screenshots/homepage.png?raw=true)
-### Admin Dashboard
-![dashboard snap](https://github.com/sumitkumar1503/onlinequiz/blob/master/static/screenshots/adminhomepage.png?raw=true)
-### Exam Rules
-![invoice snap](https://github.com/sumitkumar1503/onlinequiz/blob/master/static/screenshots/rules.png?raw=true)
-### Exam
-![doctor snap](https://github.com/sumitkumar1503/onlinequiz/blob/master/static/screenshots/exam.png?raw=true)
-### Teacher
-![doctor snap](https://github.com/sumitkumar1503/onlinequiz/blob/master/static/screenshots/teacher.png?raw=true)
---- -->
+## Funtionalities Added As Per The Assignment(Level-0)
+* [x] Each Course can have one quiz
+* [x] Teacher can add, delete and edit questions.
+* [x] Each question can have multiple correct answers, **but** can select any one correct answer.
+* [x] Teacher can allot maximum of 10 marks to one question.
+* [x] Teacher can also specify the passing marks, and the passing marks will appear on the view marks page.
+* [x] Teacher can add course.
+* [ ] Teacher can edit and delete course.
+* [ ] Student will be given a choice to leave the quiz, when the passing marks have already been achieved.
+* [x] Deploy the project on Heroku([Link To The Deployed Project](https://project-navigus-quizzer.herokuapp.com/
+"deployed project"))
+
+##### Deployed Project: https://project-navigus-quizzer.herokuapp.com/
+
 ## Functions
 ### Admin
-- Create Admin account using command
-```
-py manage.py createsuperuser
-```
+- Default Admin Account - user and Password is - user. 
 - After Login, can see Total Number Of Student, Teacher, Course, Questions are there in system on Dashboard.
 - Can View, Update, Delete, Approve Teacher.
 - Can View, Update, Delete Student.
 - Can Also See Student Marks.
-- Can Add, View, Delete Course/Exams.
+- Can Add, View, Delete Course.
 - Can Add Questions To Respective Courses With Options, Correct Answer, And Marks.
 - Can View And Delete Questions Too.
 
 ### Teacher
-- Apply for job in System. Then Login (Approval required by system admin, Then only teacher can login).
+- Can Sign-up for the platform. Then Login (Approval required by system admin, Then only teacher can login).
+- Default account - Teacher and Password -Teacher
 - After Login, can see Total Number Of Student, Course, Questions are there in system on Dashboard.
-- Can Add, View, Delete Course/Exams.
-- Can Add Questions To Respective Courses With Options, Correct Answer, And Marks.
+- Can Add, View, Delete Course.
+- Can Add Questions To Respective Courses With Options, Correct Answers, Marks and Passing Marks.
 - Can View And Delete Questions Too.
-> **_NOTE:_**  Basically Admin Will Hire Teachers To Manage Courses and Questions.
+> Basically Admin Will Hire Teachers To Manage Courses and Questions.
 
 ### Student
-- Create account (No Approval Required By Admin, Can Login After Signup)
+- Create account. Default Account - Student and Password - Student.
 - After Login, Can See How Many Courses/Exam And Questions Are There In System On Dashboard.
 - Can Give Exam Any Time, There Is No Limit On Number Of Attempt.
 - Can View Marks Of Each Attempt Of Each Exam.
@@ -65,3 +65,6 @@ http://127.0.0.1:8000/
 
 ## Feedback
 Any suggestion and feedback is welcome.
+___
+___
+###### Taken reference from LazyCoder.
