@@ -84,17 +84,19 @@ def calculate_marks_view(request):
     if request.COOKIES.get('course_id') is not None:
         course_id = request.COOKIES.get('course_id')
         course=QMODEL.Course.objects.get(id=course_id)
+
         
         total_marks=0
         questions=QMODEL.Question.objects.all().filter(course=course)
         for i in range(len(questions)):
             
             selected_ans = request.COOKIES.get(str(i+1))
-            actual_answer = questions[i].answer
-            if selected_ans == actual_answer:
+            if selected_ans == questions[i].answer or selected_ans == questions[i].answer1 or selected_ans == questions[i].answer2 or selected_ans == questions[i].answer3:
                 total_marks = total_marks + questions[i].marks
         student = models.Student.objects.get(user_id=request.user.id)
         result = QMODEL.Result()
+        if total_marks >= course.passing_marks:
+            result.status = True
         result.marks=total_marks
         result.exam=course
         result.student=student
